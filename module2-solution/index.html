@@ -7,19 +7,20 @@
     <title>Our Menu</title>
     <style>
     /********** Base styles **********/
-    
+
     * {
         box-sizing: border-box;
         margin: 0;
-        padding: 0;
+        padding: 5x;
+        
     }
-    
+
+
+
     h1 {
-        margin-bottom: 15px;
+        margin-bottom: 350px;
         text-align:center;
     }
-    
-   
 
 
 p {
@@ -28,27 +29,56 @@ p {
         height: 200px;
         padding: 10px;
 
-        margin-top: 0px;
+        margin-top: 10px;
         overflow: auto;
         margin-right: auto;
         margin-left: auto;
         font-family: Helvetica;
-        color: white;
-        background-color: magenta;
+        color: green;
+        background-color: white;
   		font-size: 100%;
-  		
+
+}
+
+
+div#container {
+  background-color: #00FFFF;
+  position: relative;
+  top: 60px;
+}
+
+
+#p1 {
+  background-color: #A52A2A;
+   position: relative;
+   top 100x
+
+  }
+
+#p2 {
+  background-color: #DEB887;
+text-align:right;
+}
+
+
+#p3 {
+  background-color: #FF7F50;
+}
+
+
+
 }
 
 
     /* Simple Responsive Framework. */
-    
+
     .row {
         width: 100%;
     }
     /********** desktops only **********/
-    
+
     @media (min-width: 992px) {
-         .col-lg-1,
+        .col-lg-1,
         .col-lg-2,
         .col-lg-3,
         .col-lg-4,
@@ -102,7 +132,7 @@ p {
         }
     }
     /********** tablet devices only **********/
-    
+
     @media (min-width: 768px) and (max-width: 991px) {
 
         .col-md-1,
@@ -116,7 +146,8 @@ p {
         .col-md-9,
         .col-md-10,
         .col-md-11,
-        .col-md-12 {
+        .col-md-12
+         {
             float: left;
             border: 1px solid black;
         }
@@ -127,7 +158,7 @@ p {
             width: 16.66%;
         }
         .col-md-3 {
-            width: 25%;
+            width: 100%;
         }
         .col-md-4 {
             width: 33.33%;
@@ -155,10 +186,10 @@ p {
         }
         .col-md-12 {
             width: 100%;
-        }
+
     }
     /********** mobile devices only **********/
-    
+
     @media (max-width: 767px) {
         .col-sm-1,
         .col-sm-2,
@@ -220,25 +251,19 @@ p {
 </head>
 
 <body>
-    <h1>Our Menu</h1>
-  
-  <div class="row">
-  <div class="col-lg-3 col-md-6">
- 
 
-<h3> Chicken</h3>            
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi quibusdam aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem. Et iure assumenda, repudiandae laudantium, voluptatibus ex dignissimos, eum quaerat ducimus cupiditate corporis totam.</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <h3> Beef</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi quibusdam aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem. Et iure assumenda, repudiandae laudantium, voluptatibus ex dignissimos, eum quaerat ducimus cupiditate corporis totam.</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <h3> Sushi</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi quibusdam aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem. Et iure assumenda, repudiandae laudantium, voluptatibus ex dignissimos, eum quaerat ducimus cupiditate corporis totam.</p>
-        </div>
-    </div>
+    <h1>Our Menu</h1>
+
+ <div> </div>
+<div class="row">
+<div> </div>
+
+
+  <div class="col-lg-3 col-md-6"> <p id="p1"></p> <p1> Chicken </p1>  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi quibusdam aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem.</p></div>
+  <div class="col-lg-3 col-md-6"><p id="p2"></p><p2>Beef</p2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi quibusdam aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem.</p></div></div>
+  <div class="col-lg-3 col-md-6"><p id="p3"></p> <p3>Sushi</p3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi quibusdam aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem.</p></div>
+
+
 </body>
 
 </html>
-
